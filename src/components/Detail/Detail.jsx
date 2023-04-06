@@ -7,7 +7,8 @@ export default function Detail() {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/videogames/${id}`)
+        // fetch(`http://localhost:3001/videogames/${id}`)
+        fetch(`https://server-videogames-pi.onrender.com/videogames/${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data) {

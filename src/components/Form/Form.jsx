@@ -29,7 +29,8 @@ export default function Form() {
     function handleSubmit(event) {
         event.preventDefault();
         
-        axios.post("http://localhost:3001/videogames", videogame)
+        // axios.post("http://localhost:3001/videogames", videogame)
+        axios.post("https://server-videogames-pi.onrender.com/videogames", videogame)
         setErrros({});
         setVideogame({
             name: "",
