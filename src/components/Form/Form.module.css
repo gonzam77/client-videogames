@@ -1,0 +1,55 @@
+.container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.add {
+    border-radius: 5px;
+    margin-left: 47%;
+    margin-top: 10px;
+    width: 50px;
+    border: 2px solid violet;
+    background: rgb(119, 28, 107);
+    background: radial-gradient(circle, rgb(119, 43, 108) 0%, rgba(22, 7, 22, 0.169) 100%);
+    color: white;
+}
+
+.form {
+    font-size: 1em;
+    color: aliceblue;
+    background: rgb(83, 12, 77);
+    background: radial-gradient(circle, rgba(162, 14, 149, 1) 0%, rgba(164, 15, 232, 0.16850490196078427));
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 50vw;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.danger {
+    font-size: 10px;
+    color: red;
+    margin-left: 10em;
+}
+
+.createButton {
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    width: 80px;
+    color: rgb(235, 243, 235);
+    background: rgb(162, 14, 149);
+    background: radial-gradient(circle, rgba(162, 14, 149, 1) 0%, rgba(164, 15, 232, 0.16850490196078427) 100%);
+    border-radius: .5em;
+    transition: background-color .2s;
+    margin-top: 15px;
+    margin-left: 45%;
+
+}

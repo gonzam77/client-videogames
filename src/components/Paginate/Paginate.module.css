@@ -1,0 +1,54 @@
+
+.pagination {
+    display: inline-block;
+    background-color: rgb(190, 83, 182);
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.page {
+    border: 1px solid black
+}
+
+.pagination:hover {
+    cursor: pointer;
+}
+
+.prevPageButton {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    height: 25px;
+    width: 60px;
+    color: rgb(235, 243, 235);
+    background: rgb(162, 14, 149);
+    background: radial-gradient(circle, rgba(162, 14, 149, 1) 0%, rgba(164, 15, 232, 0.16850490196078427) 100%);
+    border-radius: .5em;
+    transition: background-color .2s;
+}
+
+.prevPageButton:hover {
+    color: black;
+    background: rgb(37, 241, 81);
+}
+.nextPageButton {
+    cursor: pointer;
+    font-size: 1em;
+    height: 25px;
+    width: 60px;
+    color: rgb(235, 243, 235);
+    background: rgb(162, 14, 149);
+    background: radial-gradient(circle, rgba(162, 14, 149, 1) 0%, rgba(164, 15, 232, 0.16850490196078427) 100%);
+    border-radius: .5em;
+    transition: background-color .2s;
+}
+
+.nextPageButton:hover {
+    color: black;
+    background: rgb(37, 241, 81);
+}

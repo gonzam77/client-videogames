@@ -1,0 +1,9 @@
+.container {
+    color: violet;
+    background-color: black;
+}
+
+.img {
+    border: 3px solid violet ;
+    border-radius: 10px;
+}

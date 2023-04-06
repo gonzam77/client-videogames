@@ -1,0 +1,21 @@
+.searchButton {
+    cursor: pointer;
+    font-size: 1em;
+    height: 30px;
+    width: 80px;
+    color: rgb(235, 243, 235);
+    background: rgb(162, 14, 149);
+    background: radial-gradient(circle, rgba(162, 14, 149, 1) 0%, rgba(164, 15, 232, 0.16850490196078427) 100%);
+    border-radius: .5em;
+    transition: background-color .2s;
+}
+
+.searchButton:hover {
+    color: black;
+    background: rgb(37, 241, 81);
+}
+
+.input {
+    font-size: 1em;
+    border-radius: 5em;
+}
