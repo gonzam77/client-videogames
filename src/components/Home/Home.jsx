@@ -50,8 +50,8 @@ export default function Home() {
 
 
     return (
-        <div>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <div>
                 <select name="orderByName" onChange={handleOrderByName}>
                     <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by name...</option>
                     <option value="Ascendente">A-Z</option>
