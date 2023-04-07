@@ -11,7 +11,7 @@ export default function Home() {
     const genres = useSelector(state => state.genres);
     const [render, setRender] = useState();
     const [currentPage, setCurrentPage] = useState(1);
-    const [videogamesPerPage, setVideogamesPerPage] = useState(15)
+    const [videogamesPerPage] = useState(15)
     const indexOfLastVideogame = currentPage * videogamesPerPage;
     const indexOfFirstVideogame = indexOfLastVideogame - videogamesPerPage;
     const currentVideogames = videogames.slice(indexOfFirstVideogame, indexOfLastVideogame)
@@ -23,7 +23,7 @@ export default function Home() {
     useEffect(() => {
         if (!videogames.length) dispatch(actions.getAllVideogames());
         dispatch(actions.getGenresDb());
-    }, [dispatch])
+    }, [dispatch, videogames.length])
 
     function handleOrderByName(event) {
         setCurrentPage(1);
