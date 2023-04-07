@@ -51,7 +51,7 @@ export default function Home() {
 
     return (
         <div>
-            <div>
+            <div className={styles.container}>
                 <select name="orderByName" onChange={handleOrderByName}>
                     <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by name...</option>
                     <option value="Ascendente">A-Z</option>
@@ -89,7 +89,7 @@ export default function Home() {
                     currentPage={currentPage}
                 />
             </div>
-            <div className={styles.container}>
+            <div>
                 {
                     currentVideogames.length ? (
                         currentVideogames.map((game, index) => {
