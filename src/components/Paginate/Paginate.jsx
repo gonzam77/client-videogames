@@ -32,7 +32,7 @@ export default function Paginate({ videogamesPerPage, videogames, paginate, curr
                     pageNumbers.map((number, index) => {
                         return (
                             <li key={index} className={styles.pagination}>
-                                <a className={styles.page} href onClick={() => paginate(number)}>{number}</a>
+                                <a className={styles.page} href="true" onClick={() => paginate(number)}>{number}</a>
                             </li>
 
                         )
