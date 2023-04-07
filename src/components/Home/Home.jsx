@@ -11,20 +11,19 @@ export default function Home() {
     const genres = useSelector(state => state.genres);
     const [render, setRender] = useState();
     const [currentPage, setCurrentPage] = useState(1);
-    const [videogamesPerPage, setVideogamesPerPage] = useState()
+    const [videogamesPerPage, setVideogamesPerPage] = useState(15)
     const indexOfLastVideogame = currentPage * videogamesPerPage;
     const indexOfFirstVideogame = indexOfLastVideogame - videogamesPerPage;
     const currentVideogames = videogames.slice(indexOfFirstVideogame, indexOfLastVideogame)
-    
+
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
     }
-    setVideogamesPerPage()
 
     useEffect(() => {
         if (!videogames.length) dispatch(actions.getAllVideogames());
         dispatch(actions.getGenresDb());
-    },)
+    }, [dispatch])
 
     function handleOrderByName(event) {
         setCurrentPage(1);
@@ -37,7 +36,7 @@ export default function Home() {
         dispatch(actions.orderByRating(event.target.value))
         setRender(`render${event.target.value}`)
     }
-    
+
     function handleFilterByLocation(event) {
         setCurrentPage(1);
         dispatch(actions.filterByLocation(event.target.value))
@@ -48,23 +47,23 @@ export default function Home() {
         dispatch(actions.filterByGenres(event.target.value))
     }
 
-   
+
 
     return (
         <div>
             <div>
                 <select name="orderByName" onChange={handleOrderByName}>
-                    <option disabled="disabled" >Order by name...</option>
+                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by name...</option>
                     <option value="Ascendente">A-Z</option>
                     <option value="Descendente">Z-A</option>
                 </select>
                 <select name="orderByRating" onChange={handleOrderByRating}>
-                    <option disabled="disabled" >Order by rating...</option>
+                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by rating...</option>
                     <option value="Ascendente">Ascendente</option>
                     <option value="Descendente">Descendente</option>
                 </select>
                 <select name="gender" onChange={handleFilterByGenres}>
-                    <option disabled="disabled" >Filter by genres...</option>
+                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Filter by genres...</option>
                     <option value="all">All</option>
                     {
                         genres ?
@@ -76,7 +75,7 @@ export default function Home() {
                     }
                 </select>
                 <select name="location" onChange={handleFilterByLocation}>
-                    <option disabled="disabled" >Filter by location...</option>
+                <option value="defaulValue" disabled="disabled" selected="defaultValue">Filter by location...</option>
                     <option value="all">All</option>
                     <option value="database">Database</option>
                     <option value="api">API</option>
