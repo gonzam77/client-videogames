@@ -21,6 +21,7 @@
     margin-top: 20%;
     margin-left: -5%;
     opacity: 40%;
+    z-index: 2;
 }
 
 .button:hover {
