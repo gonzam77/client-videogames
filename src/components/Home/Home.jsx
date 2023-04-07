@@ -89,7 +89,7 @@ export default function Home() {
                     currentPage={currentPage}
                 />
             </div>
-            <div>
+            <div className={styles.cards}>
                 {
                     currentVideogames.length ? (
                         currentVideogames.map((game, index) => {

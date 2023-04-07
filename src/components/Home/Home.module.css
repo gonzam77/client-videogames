@@ -1,5 +1,8 @@
 .container {
     background-color: black;
+}
+.cards {
+    background-color: black;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -16,7 +19,7 @@
 select {
     background: rgb(119, 28, 107);
     background: radial-gradient(circle, rgb(119, 43, 108) 0%, rgba(22, 7, 22, 0.169) 100%);
-    color: rgb(84, 2, 92);
+    color: rgb(222, 5, 241);
     border: 2px solid violet;
     border-radius: 10px;
     font-family: Comic Sans MS;
