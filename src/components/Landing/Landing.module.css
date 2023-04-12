@@ -10,11 +10,11 @@
 
 .button {
     position: absolute;
-    border: 2px solid white;    
+    border: 2px solid white;
     color: #f8e800;
     border-radius: 10px;
-    background: rgb(255, 0, 234);
-    background: radial-gradient(circle, rgb(255, 0, 234) 0%, rgba(169, 3, 247, 0.169) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(88, 9, 121, 1) 53%, rgba(0, 255, 102, 1) 100%);
     font-size: 1.5em;
     width: 200px;
     height: 80px;
