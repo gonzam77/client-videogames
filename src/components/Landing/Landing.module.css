@@ -9,8 +9,7 @@
 }
 
 .button {
-    position: flex;
-    flex: auto; 
+    position: absolute;
     border: 2px solid white;
     color: #f8e800;
     border-radius: 10px;
@@ -19,6 +18,7 @@
     height: 80px;
     margin-top: 20%;
     margin-left: -5%;
+    opacity: 75%;
     z-index: 1;
 }
 
