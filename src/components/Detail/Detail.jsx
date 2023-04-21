@@ -8,7 +8,7 @@ export default function Detail() {
 
     useEffect(() => {
         // fetch(`http://localhost:3001/videogames/${id}`)
-        fetch(`https://server-videogames-pi.onrender.com/videogames/${id}`)
+        fetch(`https://server-videogames-jqu9.onrender.com/videogames/${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data) {

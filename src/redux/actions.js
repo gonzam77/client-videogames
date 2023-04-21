@@ -13,7 +13,7 @@ import axios from "axios";
 export const getGenresDb = () => {
     return async function (dispatch) {
         // const response = await axios('http://localhost:3001/genres/db');
-        const response = await axios('https://server-videogames-pi.onrender.com/genres/db');
+        const response = await axios('https://server-videogames-jqu9.onrender.com/genres/db');
         const data = response.data
         return dispatch({
             type: GET_GENRES,
@@ -25,7 +25,7 @@ export const getGenresDb = () => {
 export const getAllVideogames = () => {
     return async function (dispatch) {
         // const response = await axios("http://localhost:3001/videogames");
-        const response = await axios("https://server-videogames-pi.onrender.com/videogames");
+        const response = await axios("https://server-videogames-jqu9.onrender.com/videogames");
         const data = response.data;
         return dispatch({
             type: GET_ALL_VIDEOGAMES,
@@ -37,7 +37,7 @@ export const getAllVideogames = () => {
 export const getVideogameByName = (name) => {
     return async function (dispatch) {
         // const response = await axios(`http://localhost:3001/videogames/name?search=${name}`);
-        const response = await axios(`https://server-videogames-pi.onrender.com/videogames/name?search=${name}`);
+        const response = await axios(`https://server-videogames-jqu9.onrender.com/videogames/name?search=${name}`);
         const data = response.data;
         return dispatch({
             type: GET_VIDEOGAME_BY_NAME,

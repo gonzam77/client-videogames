@@ -53,17 +53,17 @@ export default function Home() {
         <div className={styles.container}>
             <div>
                 <select name="orderByName" onChange={handleOrderByName}>
-                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by name...</option>
+                    <option >Order by name...</option>
                     <option value="Ascendente">A-Z</option>
                     <option value="Descendente">Z-A</option>
                 </select>
                 <select name="orderByRating" onChange={handleOrderByRating}>
-                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Order by rating...</option>
+                    <option>Order by rating...</option>
                     <option value="Ascendente">Ascendente</option>
                     <option value="Descendente">Descendente</option>
                 </select>
                 <select name="gender" onChange={handleFilterByGenres}>
-                    <option value="defaulValue" disabled="disabled" selected="defaultValue">Filter by genres...</option>
+                    <option>Filter by genres...</option>
                     <option value="all">All</option>
                     {
                         genres ?
@@ -75,7 +75,7 @@ export default function Home() {
                     }
                 </select>
                 <select name="location" onChange={handleFilterByLocation}>
-                <option value="defaulValue" disabled="disabled" selected="defaultValue">Filter by location...</option>
+                    <option>Filter by location...</option>
                     <option value="all">All</option>
                     <option value="database">Database</option>
                     <option value="api">API</option>
@@ -103,7 +103,10 @@ export default function Home() {
                                 />
                             )
                         })
-                    ) : <h1 className={styles.loading}>LOADING...</h1>
+                    ) :
+                        <div className={styles.loading}>
+                            <h1 className={styles.loading}>LOADING...</h1>
+                        </div>
                 }
             </div>
         </div>

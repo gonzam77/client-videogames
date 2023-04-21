@@ -23,25 +23,24 @@ export default function Paginate({ videogamesPerPage, videogames, paginate, curr
     return (
         <div className={styles.container}>
             {
-                pageNumbers.length ? 
-                <button className={styles.prevPageButton} onClick={handlePrev}>prev</button> :
-                null
+                pageNumbers.length ?
+                    <button className={styles.prevPageButton} onClick={handlePrev}>prev</button> :
+                    null
             }
-            <ul>
-                {pageNumbers &&
-                    pageNumbers.map((number, index) => {
-                        return (
-                            <li key={index} className={styles.pagination}>
-                                <a className={styles.page} href onClick={() => paginate(number)}>{number}</a>
-                            </li>
+            {pageNumbers &&
+                pageNumbers.map((number, index) => {
+                    return (
+                        <button key={index} className={styles.paginate} onClick={() => paginate(number)}>{number}</button>
+                        // <li key={index} className={styles.pagination}>
+                        //     <a className={styles.page} href onClick={() => paginate(number)}>{number}</a>
+                        // </li>
 
-                        )
-                    })}
-            </ul>
+                    )
+                })}
             {
-                pageNumbers.length ? 
-                <button className={styles.nextPageButton} onClick={handleNext}>next</button> :
-                null
+                pageNumbers.length ?
+                    <button className={styles.nextPageButton} onClick={handleNext}>next</button> :
+                    null
             }
         </div>
     )

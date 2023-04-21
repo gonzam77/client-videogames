@@ -86,7 +86,6 @@ export default function reducer(state = initialState, { type, payload }) {
                 return {
                     ...state,
                     videogames: state.allVideogames.filter(videogame => {
-                        console.log(state.videogames)
                         return videogame.createdInDb
                     })
                 }
