@@ -10,9 +10,8 @@
 
 .button {
     position: absolute;
-    background-color: blue;
-    border: 2px solid rgb(109, 3, 247);
-    color: #fcfcfc;
+    border: 2px solid white;
+    color: #f8e800;
     border-radius: 10px;
     font-size: 1.5em;
     width: 200px;
@@ -20,6 +19,7 @@
     margin-top: 20%;
     margin-left: -5%;
     opacity: 75%;
+    z-index: 1;
 }
 
 .button:hover {
