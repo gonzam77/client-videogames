@@ -10,6 +10,9 @@ export default function Landing() {
         <div className={styles.container}>
             <h1>Welcome to Videogames!</h1>
             <div>
+                <Link to="/home">
+                    <button className={styles.button}>Enter</button>
+                </Link>
             </div>
             <img src={landingImg} alt="Videogame_img" />
         </div>
