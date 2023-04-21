@@ -9,21 +9,22 @@
 }
 
 .button {
+    background: rgb(119, 28, 107);
+    background: radial-gradient(circle, rgb(119, 43, 108) 0%, rgba(22, 7, 22, 0.169) 100%);
     position: absolute;
-    border: 2px solid white;
-    color: #f8e800;
+    border: 2px solid rgb(248, 248, 248);
+    color: #f800ec;
     border-radius: 10px;
     font-size: 1.5em;
     width: 200px;
     height: 80px;
     margin-top: 20%;
     margin-left: -5%;
-    opacity: 75%;
-    z-index: 1;
 }
 
 .button:hover {
     cursor: pointer;
+    background-color: aqua;
     border: 2px solid white;
     opacity: 95%;
     color: rgb(1, 253, 14);
