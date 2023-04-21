@@ -29,8 +29,9 @@
 
 
 .home:hover {
-    color: black;
-    background: rgb(37, 241, 81);
+    background-color: #04f7d6;
+    border: 2px solid rgb(2, 247, 2);
+    color: rgb(2, 247, 2);
     height: 35px;
     width: 85px;
 }
@@ -49,8 +50,9 @@
 
 
 .form:hover {
-    color: black;
-    background: rgb(37, 241, 81);
+    background-color: #04f7d6;
+    border: 2px solid rgb(2, 247, 2);
+    color: rgb(2, 247, 2);
     height: 35px;
     width: 85px;
 }
