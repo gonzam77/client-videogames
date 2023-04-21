@@ -22,10 +22,16 @@
     margin-left: -5%;
 }
 
-.button:hover {
+/* .button:hover {
     cursor: pointer;
     background-color: aqua;
     border: 2px solid white;
     opacity: 95%;
     color: rgb(1, 253, 14);
+} */
+.button:hover {
+    cursor: pointer;
+    background-color: #04f7d6;
+    border: 2px solid rgb(2, 247, 2);
+    color: rgb(2, 247, 2);
 }
