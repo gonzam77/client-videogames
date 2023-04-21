@@ -9,19 +9,26 @@
 }
 
 .button {
+    background: rgb(119, 28, 107);
+    background: radial-gradient(circle, rgb(119, 43, 108) 0%, rgba(22, 7, 22, 0.169) 100%);
     position: absolute;
-    margin: auto;
-    margin-top: 30vh;
     border: 2px solid rgb(248, 248, 248);
-    border-radius: 10px;
     color: #f800ec;
+    border-radius: 10px;
     font-size: 1.5em;
     width: 200px;
     height: 80px;
-    background: rgb(119, 28, 107);
-    background: radial-gradient(circle, rgb(119, 43, 108) 0%, rgba(22, 7, 22, 0.169) 100%);
+    margin-top: 20%;
+    margin-left: -5%;
 }
 
+/* .button:hover {
+    cursor: pointer;
+    background-color: aqua;
+    border: 2px solid white;
+    opacity: 95%;
+    color: rgb(1, 253, 14);
+} */
 .button:hover {
     cursor: pointer;
     background-color: #04f7d6;
