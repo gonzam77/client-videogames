@@ -35,3 +35,9 @@
     border: 2px solid rgb(2, 247, 2);
     color: rgb(2, 247, 2);
 }
+
+@media (max-width: 700px) { 
+    .button {
+        margin-right: 40%;
+    }
+}
