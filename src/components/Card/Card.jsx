@@ -14,5 +14,4 @@ export default function Card({id, name, image, genres}) {
         )
     }
     return null
-
 }

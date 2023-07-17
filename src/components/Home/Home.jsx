@@ -6,46 +6,46 @@ import styles from "./Home.module.css"
 import Paginate from "../Paginate/Paginate";
 
 export default function Home() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const videogames = useSelector(state => state.videogames);
     const genres = useSelector(state => state.genres);
     const [render, setRender] = useState();
     const [currentPage, setCurrentPage] = useState(1);
-    const [videogamesPerPage] = useState(15)
+    const [videogamesPerPage] = useState(15);
     const indexOfLastVideogame = currentPage * videogamesPerPage;
     const indexOfFirstVideogame = indexOfLastVideogame - videogamesPerPage;
-    const currentVideogames = videogames.slice(indexOfFirstVideogame, indexOfLastVideogame)
+    const currentVideogames = videogames.slice(indexOfFirstVideogame, indexOfLastVideogame);
 
     const paginate = (pageNumber) => {
         setCurrentPage(pageNumber)
-    }
+    };
 
     useEffect(() => {
         if (!videogames.length) dispatch(actions.getAllVideogames());
         dispatch(actions.getGenresDb());
-    }, [dispatch, videogames.length])
+    }, [dispatch, videogames.length]);
 
     function handleOrderByName(event) {
         setCurrentPage(1);
         dispatch(actions.orderByName(event.target.value))
         setRender(`render${event.target.value}`)
         console.log(render);
-    }
+    };
     function handleOrderByRating(event) {
         setCurrentPage(1);
         dispatch(actions.orderByRating(event.target.value))
         setRender(`render${event.target.value}`)
-    }
+    };
 
     function handleFilterByLocation(event) {
         setCurrentPage(1);
         dispatch(actions.filterByLocation(event.target.value))
-    }
+    };
 
     function handleFilterByGenres(event) {
         setCurrentPage(1);
         dispatch(actions.filterByGenres(event.target.value))
-    }
+    };
 
 
 
