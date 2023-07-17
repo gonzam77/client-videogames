@@ -7,6 +7,10 @@ import Detail from "./components/Detail/Detail";
 import Form from "./components/Form/Form";
 import Nav from "./components/Nav/Nav";
 
+export const urlDev = 'http://localhost:3001';
+export const urlProduction = '';
+export const URL = urlDev;
+
 function App() {
   const location = useLocation()
 

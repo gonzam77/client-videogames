@@ -1,14 +1,15 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 import styles from "./Detail.module.css"
+import { URL } from "../../App";
+
 
 export default function Detail() {
     const [videogame, setVideogame] = useState({});
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:3001/videogames/${id}`)
-        //fetch(`https://server-videogames-jqu9.onrender.com/videogames/${id}`)
+        fetch(`${URL}/videogames${id}`)
             .then(response => response.json())
             .then(data => {
                 if (data) {
