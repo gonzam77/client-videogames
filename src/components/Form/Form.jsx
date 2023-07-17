@@ -4,6 +4,7 @@ import styles from "./Form.module.css";
 import validation from "./validation";
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from "../../redux/actions";
+import { URL } from "../../App";
 
 
 export default function Form() {
@@ -29,8 +30,7 @@ export default function Form() {
     function handleSubmit(event) {
         event.preventDefault();
         
-        axios.post("http://localhost:3001/videogames", videogame)
-        //axios.post("https://server-videogames-jqu9.onrender.com/videogames", videogame)
+        axios.post(`${URL}/videogames`, videogame)
         setErrros({});
         setVideogame({
             name: "",
