@@ -8,8 +8,8 @@ import Form from "./components/Form/Form";
 import Nav from "./components/Nav/Nav";
 
 export const urlDev = 'http://localhost:3001';
-export const urlProduction = '';
-export const URL = urlDev;
+export const urlProduction = 'https://videogames-server-ypgw.onrender.com';
+export const URL = urlProduction;
 
 function App() {
   const location = useLocation()
